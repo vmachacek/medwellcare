@@ -1,0 +1,63 @@
+.banner {
+    background: url('/assets/img/iStock-614498348.jpg') no-repeat fixed center;
+    background-size: cover;
+    height: 80vh;
+
+    h1 {
+        color: #e9f4f1;
+    }
+
+    button {
+        background-color: white;
+    }
+
+    .container {
+        height: 80vh;
+        flex-direction: column;
+    }
+
+    .tagline {
+        flex: 2;
+    }
+
+    .points {
+        flex: 1;
+        background: #EEF7F5;
+        color: #6A7573;
+
+        .icon {
+            color: #6A9389
+        }
+
+        h2 {
+            color: #6A7573;
+        }
+    }
+}
+
+.benefits {
+    .icon {
+        color: #f4b840
+    }
+}
+
+.divider {
+    height: 2px;
+    background: #D0E3E2;
+}
+
+.services {
+    h3 {
+        font-size: 1rem;
+        color: #797979
+    }
+
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+
+        div {
+            min-width: 85px;
+        }
+    }
+}
