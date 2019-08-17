@@ -1,24 +1,54 @@
+.mobile-banner,
 .banner {
-    background: url('/assets/img/iStock-614498348.jpg') no-repeat fixed center;
+    background: url('/assets/img/top-background.jpg') no-repeat center;
     background-size: cover;
-    height: 80vh;
 
-    h1 {
-        color: #e9f4f1;
+}
+
+app-topsearchbar {
+    width: 100%
+}
+
+.mobile-banner {
+
+    min-height: 70vh;
+}
+
+
+@media only screen and (max-width: 676px) {
+    .mobile-banner {
+        background-position-x: -800px;
+    }
+}
+
+
+.banner {
+
+    min-height: 100vh;
+
+    @media only screen and (max-width: 992px) {
+        background: none;
     }
 
-    button {
-        background-color: white;
+    @media only screen and (min-width: 992px) {
+
+        .container {
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        background: url('/assets/img/top-background.jpg') no-repeat center;
+        background-size: cover;
     }
 
-    .container {
-        height: 80vh;
-        flex-direction: column;
+
+
+    @media only screen and (max-width: 992px) {
+        .points__heading {
+            text-align: center;
+        }
     }
 
-    .tagline {
-        flex: 2;
-    }
 
     .points {
         flex: 1;
@@ -34,6 +64,8 @@
         }
     }
 }
+
+
 
 .benefits {
     .icon {
